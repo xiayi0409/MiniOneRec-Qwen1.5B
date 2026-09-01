@@ -1,0 +1,9 @@
+MiniOneRec-Qwen1.5B Reproduction
+
+This project contains code derived from MiniOneRec:
+https://github.com/AkaliKong/MiniOneRec
+
+MiniOneRec is licensed under the Apache License, Version 2.0.
+This reproduction includes modifications for Qwen2.5-1.5B single-GPU training,
+Semantic ID quantization experiments, constrained decoding, evaluation, and
+CRID-inspired popularity-ranked identifiers.

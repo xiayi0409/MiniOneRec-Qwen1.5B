@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Environments and local configuration
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Large models, datasets and generated outputs
+/models/
+/data/Amazon/
+/data/raw_amazon_metadata/
+/output/
+/results/
+/temp/
+/logs/
+/wandb/
+/rq/output/
+
+# Model/data artifacts
+*.safetensors
+*.pth
+*.pt
+*.bin
+*.npy
+*.npz
+*.faiss
+*.csv
+*.inter
+*.log
+*.pid
+
+# Keep curated public artifacts
+!artifacts/**/*.json
+!assets/*.png

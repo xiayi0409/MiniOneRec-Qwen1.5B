@@ -1,0 +1,50 @@
+{
+  "dataset": "Amazon Review 2018 / Industrial_and_Scientific",
+  "backbone": "Qwen2.5-1.5B",
+  "test_samples": 4533,
+  "beam_size": 50,
+  "primary_sft_vs_grpo": {
+    "scope": "single recorded run; relative improvements are limited to K=3,5,10",
+    "sft": {
+      "hr@3": 0.089345,
+      "ndcg@3": 0.077177,
+      "hr@5": 0.108317,
+      "ndcg@5": 0.084961,
+      "hr@10": 0.137216,
+      "ndcg@10": 0.094320,
+      "hr@50": 0.238473
+    },
+    "grpo_step_1650": {
+      "hr@3": 0.093757,
+      "ndcg@3": 0.081705,
+      "hr@5": 0.111185,
+      "ndcg@5": 0.088872,
+      "hr@10": 0.140084,
+      "ndcg@10": 0.098117,
+      "hr@50": 0.234061
+    },
+    "relative_change_percent": {
+      "hr@3": 4.94,
+      "ndcg@3": 5.87,
+      "hr@5": 2.65,
+      "ndcg@5": 4.60,
+      "hr@10": 2.09,
+      "ndcg@10": 4.03,
+      "hr@50": -1.85
+    }
+  },
+  "crid_popularity_vs_rqkmeans_plus": {
+    "rank_signal": "training interaction count proxy",
+    "relative_change_percent": {
+      "ndcg@10": 1.47,
+      "hr@10": 1.80,
+      "hr@50": -3.19
+    },
+    "category_precision_at_10_change_percentage_points": {
+      "parent_full_sid_embedding": 13.18,
+      "leaf_full_sid_embedding": 6.64,
+      "parent_two_level_prefix_embedding": 1.28,
+      "leaf_two_level_prefix_embedding": 0.40
+    }
+  }
+}

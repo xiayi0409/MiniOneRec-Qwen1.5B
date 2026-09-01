@@ -1,0 +1,140 @@
+{
+  "FAISS RQ-KMeans raw": {
+    "n": 3686,
+    "unique_full_sid": 2958,
+    "duplicate_items": 728,
+    "collision_rate": 0.19750406945198046,
+    "collision_groups": 427,
+    "max_group": 22,
+    "utilization": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "load_cv": [
+      0.7228012708043866,
+      3.660379639921331,
+      2.1299561944246133
+    ],
+    "norm_perplexity": [
+      0.7740366007744238,
+      0.1471930004465817,
+      0.41837329841994036
+    ]
+  },
+  "Constrained RQ-KMeans raw": {
+    "n": 3686,
+    "unique_full_sid": 3290,
+    "duplicate_items": 396,
+    "collision_rate": 0.10743353228431904,
+    "collision_groups": 277,
+    "max_group": 10,
+    "utilization": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "load_cv": [
+      0.06035972724169014,
+      0.059732137688483594,
+      0.05877819045405412
+    ],
+    "norm_perplexity": [
+      0.9981461800715407,
+      0.9981848986226765,
+      0.9982429792654804
+    ]
+  },
+  "RQ-KMeans++ raw": {
+    "n": 3686,
+    "unique_full_sid": 1413,
+    "duplicate_items": 2273,
+    "collision_rate": 0.6166576234400434,
+    "collision_groups": 385,
+    "max_group": 124,
+    "utilization": [
+      0.38671875,
+      0.4765625,
+      0.34375
+    ],
+    "load_cv": [
+      7.029064123651269,
+      4.524050242202953,
+      7.322547745171287
+    ],
+    "norm_perplexity": [
+      0.03504242953982247,
+      0.10006138959722745,
+      0.04442047485080783
+    ]
+  },
+  "RQ-VAE raw": {
+    "n": 3686,
+    "unique_full_sid": 3313,
+    "duplicate_items": 373,
+    "collision_rate": 0.10119370591427021,
+    "collision_groups": 227,
+    "max_group": 22,
+    "utilization": [
+      0.3125,
+      1.0,
+      1.0
+    ],
+    "load_cv": [
+      1.9446814168437658,
+      0.370552498056633,
+      0.6655000608784343
+    ],
+    "norm_perplexity": [
+      0.2539515631447547,
+      0.9381640420617384,
+      0.8523074091259727
+    ]
+  },
+  "Sinkhorn RQ-VAE raw": {
+    "n": 3686,
+    "unique_full_sid": 3519,
+    "duplicate_items": 167,
+    "collision_rate": 0.04530656538252849,
+    "collision_groups": 109,
+    "max_group": 17,
+    "utilization": [
+      1.0,
+      0.99609375,
+      0.99609375
+    ],
+    "load_cv": [
+      0.0969998931010716,
+      0.37944598720134376,
+      0.5667854388238951
+    ],
+    "norm_perplexity": [
+      0.9953259442546367,
+      0.9321599626460331,
+      0.8584737662841542
+    ]
+  },
+  "Sinkhorn + dead reset raw": {
+    "n": 3686,
+    "unique_full_sid": 3442,
+    "duplicate_items": 244,
+    "collision_rate": 0.06619641888225719,
+    "collision_groups": 137,
+    "max_group": 22,
+    "utilization": [
+      1.0,
+      1.0,
+      0.9921875
+    ],
+    "load_cv": [
+      0.12318547743361392,
+      0.5050094993066382,
+      1.1042182312107758
+    ],
+    "norm_perplexity": [
+      0.9927241662758596,
+      0.8939626185786443,
+      0.6737897932979697
+    ]
+  }
+}
