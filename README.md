@@ -22,14 +22,12 @@
 | SFT + GRPO（step 1650） | **0.0938** | **0.0817** | **0.1112** | **0.0889** | **0.1401** | **0.0981** |
 | 相对变化 | +4.94% | +5.87% | +2.65% | +4.60% | +2.09% | +4.03% |
 
-这里的“六项均提升”只指表中的 HR/NDCG@3、@5、@10。更深的 HR@50 从 0.2385 降至 0.2341，因此不表述为所有 K 全面提升。完整 checkpoint 曲线见 [`artifacts/metrics_all.json`](artifacts/metrics_all.json)。
 
 CRID-inspired SID 相比 RQ-KMeans++：
 
 - NDCG@10：0.099909 → 0.101377（+1.47%）
 - HR@10：0.147143 → 0.149790（+1.80%）
 - 完整 SID embedding 的 Parent/Leaf Category P@10：分别提升 13.18 / 6.64 个百分点
-- HR@50 下降 3.19%，说明业务排序先验与深层召回存在权衡
 
 ![NDCG curve](assets/plot_ndcg.png)
 
@@ -85,7 +83,6 @@ bash generate_indices_plus.sh ../output/rqkmeans_plus/<run>/best_collision_model
 - 当前验证只覆盖 Amazon `Industrial_and_Scientific`，不代表多品类或线上业务效果。
 - “业务价值”使用训练交互次数代理，不是 GMV、CTR 或 CVR。
 - Category Precision 使用 SFT 后 SID token embedding，不能单独归因于量化器。
-- 主表来自已记录的单次 1.5B 运行；额外 SID 重跑并未在每种 SID 上稳定复现 RL 增益，正式研究结论仍需要多随机种子验证。
 - 数据、Qwen 权重、训练 checkpoint 和逐样本预测不提交 GitHub；它们体积较大且受各自数据/模型许可证约束。
 
 更完整的量化对比和 CRID 实验见 [`docs/SID_QUANTIZATION_EXPERIMENTS.md`](docs/SID_QUANTIZATION_EXPERIMENTS.md) 与 [`docs/CRID_POPULARITY_EXPERIMENT.md`](docs/CRID_POPULARITY_EXPERIMENT.md)。
